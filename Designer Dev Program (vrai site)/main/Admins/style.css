@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: #333;
+    font-family: 'Lora', 'sans serif';
+}
+
+
+
+
+/* GENERAL */
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+a:hover {
+    cursor: pointer;
+    color: orangered;
+}
+
+
+
+/* SECTIONS */
+
+
+/* title */
+
+#title {
+    background-color: #222;
+    height: 150px;    
+}
+
+
+#title h1 {
+    float: left;
+    font-family: 'Roboto';
+    font-size: 35px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+
+.point {
+    color: orangered;
+    font-size: 50px;
+}
+
+
+#title nav {
+    float: right;
+    font-size: 25px;
+    margin-top: 60px;
+    margin-right: 100px;
+}
+
+#title nav ul li {
+    display: inline;
+}
+
+#title nav ul li:hover {
+    cursor: pointer;
+    color: orangered;
+}
+
+
+
+
+/* footer */
+
+
+footer {
+    background-color: #222;
+    margin-top: 600px;
+    height: 200px;
+}
+
+
+footer h2 {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+footer h3 {
+    margin-left: 500px;
+    font-size: 15px;
+}
+
+footer h3:hover {
+    color: orangered;
+    cursor: pointer;
+    filter: brightness(1);
+}
+
+
+
+
+
+
+/* Responsive */
+
+
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+
+
+    body {
+        font-size: 15px;
+    }
+
+
+
+        #title h1 {
+            text-align: center;
+            font-family: 'Roboto';
+            font-size: 35px;
+            margin-left: 20px;
+            margin-top: 40px;
+        }
+    
+
+
+
+
+
+
+
+
+
+    footer h3 {
+        margin-left: 50px;
+        margin-top: 70px;
+        text-align: center;
+        display: inline;
+        opacity: 0;
+    }
+
+
+
+
+
+}
+
+
+
+/* duo mobile, authi*/

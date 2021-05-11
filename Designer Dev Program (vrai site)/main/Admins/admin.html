@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!--Style de Police-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+<meta name="og:title" content="Designer Dev Program - Admins">
+<meta name="og:description" content="Designer Dev Program est un serveur discord basé sur le développement ! Venez découvrir son site !">
+<meta name="theme-color" content="#00008B">
+<link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/809849743126560788/840864678611124234/logo-ddp.png" />
+
+
+    <title>DDP Admins</title>      
+</head>
+<body>
+
+
+    <section id="title">
+        <h1>Designer Dev Program <span class="point">.</span></h1>
+
+        <nav>
+            <ul>
+                <li><a href="../views/index.html">Accueil</a></li>
+                <li><a href="../views/presentation.html²    ">Présentation</a></li>
+                <li><a href="../views/concours.html">Concours</a></li>
+        </nav>
+    </section>
+
+    <h1 style="text-align: center;">Bienvenue sur la page administrateurs !</h1>
+
+
+
+
+    <h3 style="text-align: center; margin-top: 200px;">Webhooks</h3>
+
+
+
+
+    
+<div class="webhook">
+
+    <form>
+      <input type="text" id="webhook" placeholder="Texte du webhook">
+    </form>
+
+
+    <form>
+      <input class="input2" type="text" id="titre-webhook" placeholder="Titre du webhook">
+    </form>
+
+
+    </div>
+
+    <div class="div-btn">
+        <button onclick="sendMessage()">Envoyer le webhooks</button>    
+        </div>
+,, 
+ 
+
+
+    <script>
+        function sendMessage() {
+          var request = new XMLHttpRequest();
+          request.open("POST", "https://discord.com/api/webhooks/821746828151619604/NH9I36ZcoEtgu-9TSSJEvxnnB_t79wOfAzdDRFyAlEbPgyZ8-wY-OQMP2NURSP1GF3DD");
+    
+          request.setRequestHeader('Content-type', 'application/json');
+    
+          var params = {
+            username: input = document.getElementById("titre-webhook").value,
+            avatar_url: "https://cdn.discordapp.com/attachments/822792691283656734/827141759775014932/PicsArt_04-01-01.24.07.png",
+            content: input = document.getElementById("webhook").value,
+          }
+    
+          request.send(JSON.stringify(params));
+        }
+      </script>
+
+
+
+
+<h3 style="text-align: center; margin-top: 200px;">Download</h3>
+
+
+<h4 style="text-align: center;">Téléchargez les fichiers pour en avoir une copie :  
+    <a href="index.html" download="index.html" download="cd.html">Telecharger</a></h4>
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <h2>Designer Dev Program 2021 - &copy; Tout droits reserves</h2>
+
+    <h3> <a href="../views/index.html"> <span style="color: green;"> > </span> Accueil </a></h3>
+    <h3> <a href="../views/concours.html"> <span style="color: green;"> > </span> Présentation </a></h3>
+    <h3> <a href=".//views/concours.html"> <span style="color: green;"> > </span>  Concours </a></h3>
+    <h3><a href=".//views/cd.html"> <span style="color: green;"> > </span> Conditions d'utilisation </a></h3>
+    <h3 style="position: relative; margin-left: 750px; margin-top: -76px;"><a href="https://discord.gg/cW5JQfrSkb"> <span style="color: green;"> > </span> Rejoindre</h3>
+    <h3 style="position: relative; margin-left: 750px; margin-top: none;"><a href="login.php"> <span style="color: green;"> > </span> Admins</h3>
+
+
+</footer>
+
+
+    
+</body>
+</html>
+
+
+
+
+<style>
+
+
+.webhook {
+    text-align: center;
+    margin-top: 200px;
+}
+
+
+input {
+    border: solid 1px blue;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+
+.div-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+button {
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background: linear-gradient(to left, rgb(48, 41, 36) 10%, rgb(51, 49, 45) 2%, rgb(71, 67, 66) 30%);
+}
+
+
+
+button:hover {
+    filter: brightness(1.5);
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
